@@ -3,18 +3,25 @@ project:
   output-dir: docs
 
 website:
-  title: "sagrikachugh.github.io"
+  favicon: "favicon.jpeg"
+  site-url: https://sagrikachugh.github.io/
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
-
+      - research.qmd
+      - outreach.qmd
+      - publications.qmd
+  page-footer: 
+    background: light
+    left: 
+     - "Copyright 2024, Sagrika Chugh"
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: 
+       - styles.scss
     toc: true
+    page-layout: full
 
 editor: visual
 

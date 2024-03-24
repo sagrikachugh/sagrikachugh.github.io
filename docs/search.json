@@ -1,16 +1,16 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sagrika Chugh",
+    "section": "",
+    "text": "Hey there! Welcome to my corner of computational biology. Join me on this wild ride as I navigate the tangled web of single-cell genomics, armed with nothing but code and a few cups of coffee.\nI am a computational biology PhD student in the Bioinformatics and Cellular Genomics Lab at St. Vincent’s Institute of Medical Research and University of Melbourne, in Melbourne, Australia.\n\nMy research focuses on single-cell genomics data analysis and development of computational tools for a comprehensive understanding of the genetic basis of complex diseases.\nOutside of work, I love to travel on a budget and catch up on my beauty sleep."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "sagrikachugh.github.io",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   }
 ]

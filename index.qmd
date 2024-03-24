@@ -1,11 +1,32 @@
 ---
-title: "sagrikachugh.github.io"
+title: "Sagrika Chugh"
+image: "Sagrika.png"
+toc: false
+about: 
+  template: trestles
+  image-shape: round
+  image-width: 20em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/sagrika-chugh-8973578b/
+    - icon: X
+      text: Twitter/X
+      href: https://twitter.com/sagrikachugh
+    - icon: github  
+      text: GitHub
+      href: https://github.com/sagrikachugh
+    - icon: envelope  
+      text: Email
+      href: mailto:schugh@svi.edu.au
+    - text: "{{< iconify academicons google-scholar size=xl >}}"
+      href: https://scholar.google.com/citations?user=uNv547cAAAAJ&hl=en
 ---
 
-This is a Quarto website.
+Hey there! Welcome to my corner of computational biology. Join me on this wild ride as I navigate the tangled web of single-cell genomics, armed with nothing but code and a few cups of coffee.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I am a computational biology PhD student in the [Bioinformatics and Cellular Genomics Lab](https://www.svi.edu.au/laboratories/bioinformatics-cellular-genomics/) at [St. Vincent's Institute of Medical Research](https://www.svi.edu.au/) and University of Melbourne, in Melbourne, Australia.\
+\
+My research focuses on single-cell genomics data analysis and development of computational tools for a comprehensive understanding of the genetic basis of complex diseases.
 
-```{r}
-1 + 1
-```
+Outside of work, I love to travel on a budget and catch up on my beauty sleep.
