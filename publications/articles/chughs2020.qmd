@@ -1,0 +1,27 @@
+---
+title: "Characterization of the chloroplast genome facilitated the transformation of parachlorella kessleri-I, a potential marine alga for biofuel production"
+type: "article"
+author: "Prachi Nawkarkar, Sagrika Chugh, Surbhi Sharma, Mukesh Jain, Sachin Kajla, Shashi Kumar"
+year: "2020"
+publication: "Current genomics"
+doi: "https://doi.org/10.2174/1389202921999201102164754"
+toc: false
+categories:
+  - chloroplast genome
+  - algal
+  - journal article
+---
+
+## Citation (APA7)
+
+Nawkarkar, P., Chugh, S., Sharma, S., Jain, M., Kajla, S., & Kumar, S. (2020). Characterization of the chloroplast genome facilitated the transformation of parachlorella kessleri-I, a potential marine alga for biofuel production. Current Genomics, 21(8), 610-623.
+
+## Abstract
+
+Introduction: The microalga Parachlorella kessleri-I produces high biomass and lipid content that could be suitable for producing economically viable biofuel at a commercial scale. Sequencing the complete chloroplast genome is crucial for the construction of a species-specific chloroplast transformation vector.
+
+Methods: In this study, the complete chloroplast genome sequence (cpDNA) of P. kessleri-I was assembled; annotated and genetic transformation of the chloroplast was optimized. For the chloroplast transformation, we have tested two antibiotic resistance makers, aminoglycoside adenine transferase (aadA) gene and Sh-ble gene conferring resistance to spectinomycin and zeocin, respectively. Transgene integration and homoplasty determination were confirmed using PCR, Southern blot and Droplet Digital PCR.
+
+Results: The chloroplast genome (109,642 bp) exhibited a quadripartite structure with two reverse repeat regions (IRA and IRB), a long single copy (LSC), and a small single copy (SSC) region. The genome encodes 116 genes, with 80 protein-coding genes, 32 tRNAs and 4 rRNAs. The cpDNA provided essential information like codons, UTRs and flank sequences for homologous recombination to make a species-specific vector that facilitated the transformation of P. kessleri-I chloroplast. The transgenic algal colonies were retrieved on a TAP medium containing 400 mg. L-1 spectinomycin, but no transgenic was recovered on the zeocin-supplemented medium. PCR and Southern blot analysis ascertained the transgene integration into the chloroplast genome, via homologous recombination. The chloroplast genome copy number in wildtype and transgenic P. kessleri-I was determined using Droplet Digital PCR.
+
+Conclusion: The optimization of stable chloroplast transformation in marine alga P. kessleri-I should open a gateway for directly engineering the strain for carbon concentration mechanisms to fix more CO2, improving the photosynthetic efficiency and reducing the overall biofuels production cost

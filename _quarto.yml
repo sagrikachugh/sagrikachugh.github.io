@@ -3,15 +3,20 @@ project:
   output-dir: docs
 
 website:
-  favicon: "favicon.jpeg"
+  title: Sagrika Chugh
+  favicon: "images/favicon.jpeg"
   site-url: https://sagrikachugh.github.io/
   navbar:
-    right:
+    logo:  "images/favicon.jpeg"
+    right: 
       - href: index.qmd
         text: Home
-      - research.qmd
-      - outreach.qmd
-      - publications.qmd
+      - text: "Research"  
+        file: research.qmd
+      - text: "Outreach"  
+        file: outreach.qmd
+      - text: "Publications"  
+        file: publications.qmd
   page-footer: 
     background: light
     left: 

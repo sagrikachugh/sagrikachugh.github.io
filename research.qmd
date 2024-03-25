@@ -3,3 +3,5 @@ title: "Research"
 ---
 
 ## PhD Research
+
+My Ph.D. research employs single-cell multi-omics technologies, which combine information from multiple levels of biology to provide important insights into genetic architectures and disease mechanisms. I am developing statistical methods to improve our understanding of how genetic variation affects disease risk by identifying “multi-omic” molecular quantitative trait loci i.e., regions of the genome associated with phenotypes of interest. Mapping associations between genes and disease is incredibly important to help us improve diagnosis, and treatment, and, ultimately, focus on preventative care. Through my research, I want to provide the much- needed methods to link genetic variation to molecular phenotypes relevant to disease biology at single-cell resolution.

@@ -1,16 +1,72 @@
 [
   {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Sagrika Chugh",
+    "section": "",
+    "text": "Home\n    Publications\n  \n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n         \n          Publication\n        \n         \n          Year\n        \n     \n  \n    \n      \n      \n    \n\n\n  \n    Cell type-specific and disease-associated eQTL in the human lung\n    Heini M Natri, Christina B Del Azodi, Lance Peter, Chase J Taylor, Sagrika Chugh, et al.,\n    preprint\n    (2021)\n    \n      Details\n    \n    \n      DOI\n    \n  \n  \n    Characterization of the chloroplast genome facilitated the transformation of parachlorella kessleri-I, a potential marine alga for biofuel production\n    Prachi Nawkarkar, Sagrika Chugh, Surbhi Sharma, Mukesh Jain, Sachin Kajla, Shashi Kumar\n    Current genomics\n    (2020)\n    \n      Details\n    \n    \n      DOI\n    \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/articles/chughs2021.html",
+    "href": "publications/articles/chughs2021.html",
+    "title": "Cell type-specific and disease-associated eQTL in the human lung",
+    "section": "",
+    "text": "Natri, H. M., Azodi, C. B. D., Peter, L., Taylor, C. J., Chugh, S., Kendle, R., … & Calvi, C. L. (2023). Cell type-specific and disease-associated eQTL in the human lung. bioRxiv."
+  },
+  {
+    "objectID": "publications/articles/chughs2021.html#citation-apa7",
+    "href": "publications/articles/chughs2021.html#citation-apa7",
+    "title": "Cell type-specific and disease-associated eQTL in the human lung",
+    "section": "",
+    "text": "Natri, H. M., Azodi, C. B. D., Peter, L., Taylor, C. J., Chugh, S., Kendle, R., … & Calvi, C. L. (2023). Cell type-specific and disease-associated eQTL in the human lung. bioRxiv."
+  },
+  {
+    "objectID": "publications/articles/chughs2021.html#abstract",
+    "href": "publications/articles/chughs2021.html#abstract",
+    "title": "Cell type-specific and disease-associated eQTL in the human lung",
+    "section": "Abstract",
+    "text": "Abstract\nCommon genetic variants confer substantial risk for chronic lung diseases, including pulmonary fibrosis (PF). Defining the genetic control of gene expression in a cell-type-specific and context-dependent manner is critical for understanding the mechanisms through which genetic variation influences complex traits and disease pathobiology. To this end, we performed single-cell RNA-sequencing of lung tissue from 67 PF and 49 unaffected donors. Employing a pseudo-bulk approach, we mapped expression quantitative trait loci (eQTL) across 38 cell types, observing both shared and cell type-specific regulatory effects. Further, we identified disease-interaction eQTL and demonstrated that this class of associations is more likely to be cell-type specific and linked to cellular dysregulation in PF. Finally, we connected PF risk variants to their regulatory targets in disease-relevant cell types. These results indicate that cellular context determines the impact of genetic variation on gene expression, and implicates context-specific eQTL as key regulators of lung homeostasis and disease."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My Ph.D. research employs single-cell multi-omics technologies, which combine information from multiple levels of biology to provide important insights into genetic architectures and disease mechanisms. I am developing statistical methods to improve our understanding of how genetic variation affects disease risk by identifying “multi-omic” molecular quantitative trait loci i.e., regions of the genome associated with phenotypes of interest. Mapping associations between genes and disease is incredibly important to help us improve diagnosis, and treatment, and, ultimately, focus on preventative care. Through my research, I want to provide the much- needed methods to link genetic variation to molecular phenotypes relevant to disease biology at single-cell resolution."
+  },
+  {
+    "objectID": "research.html#phd-research",
+    "href": "research.html#phd-research",
+    "title": "Research",
+    "section": "",
+    "text": "My Ph.D. research employs single-cell multi-omics technologies, which combine information from multiple levels of biology to provide important insights into genetic architectures and disease mechanisms. I am developing statistical methods to improve our understanding of how genetic variation affects disease risk by identifying “multi-omic” molecular quantitative trait loci i.e., regions of the genome associated with phenotypes of interest. Mapping associations between genes and disease is incredibly important to help us improve diagnosis, and treatment, and, ultimately, focus on preventative care. Through my research, I want to provide the much- needed methods to link genetic variation to molecular phenotypes relevant to disease biology at single-cell resolution."
+  },
+  {
+    "objectID": "publications/articles/chughs2020.html",
+    "href": "publications/articles/chughs2020.html",
+    "title": "Characterization of the chloroplast genome facilitated the transformation of parachlorella kessleri-I, a potential marine alga for biofuel production",
+    "section": "",
+    "text": "Nawkarkar, P., Chugh, S., Sharma, S., Jain, M., Kajla, S., & Kumar, S. (2020). Characterization of the chloroplast genome facilitated the transformation of parachlorella kessleri-I, a potential marine alga for biofuel production. Current Genomics, 21(8), 610-623."
+  },
+  {
+    "objectID": "publications/articles/chughs2020.html#citation-apa7",
+    "href": "publications/articles/chughs2020.html#citation-apa7",
+    "title": "Characterization of the chloroplast genome facilitated the transformation of parachlorella kessleri-I, a potential marine alga for biofuel production",
+    "section": "",
+    "text": "Nawkarkar, P., Chugh, S., Sharma, S., Jain, M., Kajla, S., & Kumar, S. (2020). Characterization of the chloroplast genome facilitated the transformation of parachlorella kessleri-I, a potential marine alga for biofuel production. Current Genomics, 21(8), 610-623."
+  },
+  {
+    "objectID": "publications/articles/chughs2020.html#abstract",
+    "href": "publications/articles/chughs2020.html#abstract",
+    "title": "Characterization of the chloroplast genome facilitated the transformation of parachlorella kessleri-I, a potential marine alga for biofuel production",
+    "section": "Abstract",
+    "text": "Abstract\nIntroduction: The microalga Parachlorella kessleri-I produces high biomass and lipid content that could be suitable for producing economically viable biofuel at a commercial scale. Sequencing the complete chloroplast genome is crucial for the construction of a species-specific chloroplast transformation vector.\nMethods: In this study, the complete chloroplast genome sequence (cpDNA) of P. kessleri-I was assembled; annotated and genetic transformation of the chloroplast was optimized. For the chloroplast transformation, we have tested two antibiotic resistance makers, aminoglycoside adenine transferase (aadA) gene and Sh-ble gene conferring resistance to spectinomycin and zeocin, respectively. Transgene integration and homoplasty determination were confirmed using PCR, Southern blot and Droplet Digital PCR.\nResults: The chloroplast genome (109,642 bp) exhibited a quadripartite structure with two reverse repeat regions (IRA and IRB), a long single copy (LSC), and a small single copy (SSC) region. The genome encodes 116 genes, with 80 protein-coding genes, 32 tRNAs and 4 rRNAs. The cpDNA provided essential information like codons, UTRs and flank sequences for homologous recombination to make a species-specific vector that facilitated the transformation of P. kessleri-I chloroplast. The transgenic algal colonies were retrieved on a TAP medium containing 400 mg. L-1 spectinomycin, but no transgenic was recovered on the zeocin-supplemented medium. PCR and Southern blot analysis ascertained the transgene integration into the chloroplast genome, via homologous recombination. The chloroplast genome copy number in wildtype and transgenic P. kessleri-I was determined using Droplet Digital PCR.\nConclusion: The optimization of stable chloroplast transformation in marine alga P. kessleri-I should open a gateway for directly engineering the strain for carbon concentration mechanisms to fix more CO2, improving the photosynthetic efficiency and reducing the overall biofuels production cost"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Sagrika Chugh",
     "section": "",
     "text": "Hey there! Welcome to my corner of computational biology. Join me on this wild ride as I navigate the tangled web of single-cell genomics, armed with nothing but code and a few cups of coffee.\nI am a computational biology PhD student in the Bioinformatics and Cellular Genomics Lab at St. Vincent’s Institute of Medical Research and University of Melbourne, in Melbourne, Australia.\n\nMy research focuses on single-cell genomics data analysis and development of computational tools for a comprehensive understanding of the genetic basis of complex diseases.\nOutside of work, I love to travel on a budget and catch up on my beauty sleep."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]

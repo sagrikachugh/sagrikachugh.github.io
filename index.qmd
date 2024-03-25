@@ -1,6 +1,6 @@
 ---
 title: "Sagrika Chugh"
-image: "Sagrika.png"
+image: "images/Sagrika.png"
 toc: false
 about: 
   template: trestles
