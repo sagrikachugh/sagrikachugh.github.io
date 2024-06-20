@@ -1,3 +1,47 @@
 ---
-title: "About"
+title: "About me:"
+subtitle: "a bit more about me, both inside and outside of my job"
+title-block-banner: true
 ---
+
+## My journey
+
+I started off in the wet lab, splashing around with pipettes and microscopes but soon realized my true calling involved less splashing and more coding. Now, as a final-year PhD student at the University of Melbourne, I'm knee-deep in single-cell genomics data, crafting cool computational tools to help biologists interpret their data better. Think of me as a data detective with a caffeine habit.
+
+::: column-margin
+```{r}
+#| echo: false
+knitr::include_graphics("images/wetlab-1.png")
+```
+
+::: {.center-text .extra-small-text .dark-gray-text .topbr}
+Observing cell cultures under a microscope during my wet lab days.
+:::
+:::
+
+Outside of research, I enjoy budget travel and ensuring I get enough rest to stay refreshed and inspired. Join me in exploring the fascinating intersections of biology and data science—there's always something new to discover!
+
+## Education
+
+### PhD computational biology, 2020 -
+
+The University of Melbourne & St. Vincent's Institute of Medical Research
+
+### Master of Bioinformatics, 2016 - 2018
+
+University of Hyderabad, India
+
+### Bachelor of Technology, 2012 - 2016
+
+Biotechnology\
+Dr. D.Y. Patil Vidyapeeth, India
+
+::: column-margin
+```{r}
+#| echo: false
+#| fig-alt: "A smiling woman with braiding pigtails, a blue bandana tied around her neck, and a blue hiking backback takes a selfie with a brown dog. The dog is looking towards the camera with it's tongue out. There are mountains in the background."
+```
+
+::: {.center-text .extra-small-text .dark-gray-text .topbr}
+:::
+:::

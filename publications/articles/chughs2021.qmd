@@ -3,8 +3,8 @@ title: "Cell type-specific and disease-associated eQTL in the human lung"
 type: "article"
 author: "Heini M Natri, Christina B Del Azodi, Lance Peter, Chase J Taylor, Sagrika Chugh, et al.,"
 year: "2021"
-publication: "preprint"
-doi: "https://doi.org/10.1101/2023.03.17.533161"
+publication: "Nature Genetics"
+doi: "https://www.nature.com/articles/s41588-024-01702-0"
 toc: false
 categories:
   - eQTL

@@ -11,10 +11,12 @@ website:
     right: 
       - href: index.qmd
         text: Home
+      - href: about.qmd
+        text: About Me
       - text: "Research"  
         file: research.qmd
-      - text: "Outreach"  
-        file: outreach.qmd
+      #- text: "Outreach"  
+      #  file: outreach.qmd
       - text: "Publications"  
         file: publications.qmd
   page-footer: 
