@@ -1,6 +1,6 @@
 ---
  title: "Sagrika Chugh"
- image: "images/Sagrika.png"
+ image: "images/profile.png"
  toc: false
  about:
    template: trestles
@@ -23,7 +23,11 @@
        href: https://scholar.google.com/citations?user=uNv547cAAAAJ&hl=en
 ---
 
-Hey there! Welcome to my corner of computational biology. Join me on this wild ride as I navigate the tangled web of single-cell genomics, armed with nothing but code and a few cups of coffee.
+# Hi there!!
+
+I am **Sagrika** (pronounced as Sah-gree-kah)
+
+Welcome to my corner of computational biology. Join me on this wild ride as I navigate the tangled web of single-cell genomics, armed with nothing but code and a few cups of coffee.
 
 I am a computational biology PhD student in the [Bioinformatics and Cellular Genomics Lab](https://www.svi.edu.au/laboratories/bioinformatics-cellular-genomics/) at [St. Vincent's Institute of Medical Research](https://www.svi.edu.au/) and University of Melbourne, Melbourne, Australia.\
 \
@@ -31,4 +35,4 @@ My research focuses on single-cell genomics data analysis and development of com
 
 Outside of work, I love to travel on a budget and catch up on my beauty sleep.
 
-
+Dive in and discover my work – it's more exciting than it sounds, I promise!
