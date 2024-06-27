@@ -1,5 +1,7 @@
 ---
  title: "Sagrika Chugh"
+ subtitle: "Ph.D. candidate"
+ description: University of Melbourne
  image: "images/profile.png"
  toc: false
  about:
