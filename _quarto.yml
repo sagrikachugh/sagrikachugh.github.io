@@ -15,8 +15,10 @@ website:
         text: About Me
       - text: "Research"  
         file: research.qmd
-      #- text: "Outreach"  
-      #  file: outreach.qmd
+      - text: "Experience" 
+        file: experience.qmd
+      - text: "Outreach"
+        file: outreach.qmd
       - text: "Publications"  
         file: publications.qmd
   page-footer: 

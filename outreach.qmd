@@ -1,4 +1,20 @@
 ---
 title: "Outreach"
+subtitle: "engagement and committe involvements"
 ---
 
+-   ABACBS: Diversity and Inclusion Committee\
+    I am deeply passionate about fostering diversity and inclusion in computational biology. As a member of the Diversity and Inclusion committee, I am committed to creating a more equitable and welcoming environment for all individuals, regardless of their background. I believe that diverse perspectives are essential for driving innovation and ensuring that the benefits of scientific advancement are accessible to everyone. My role on the committee allows me to actively contribute to initiatives that promote equal opportunities and representation in our field, which is something I am both proud and honored to support.\
+
+-   AMSI BioInfo Summer Workshop - organising committee
+
+    This workshop provides a hands-on introduction to then current computational analysis approaches (still relevant )for studying single-cell RNA sequencing data. We will discuss the data formats used frequently in single-cell analysis, typical steps in quality control and processing of single-cell data, some of the biological questions these data can be used to answer and data analysis steps to answer them.\
+    The materials for the workshop can be found [here](https://biocellgen-public.svi.edu.au/amsi_bios_2022_single-cell-workshop/AMSI_BIOS_Introduction-QC_updated2022.html)
+
+-   SPEAK your science workshop at St. Vincent's institute
+
+    organizing fortnightly workshops with the team and providing feedback to students on their scientific writing 
+
+-   Faculty of Science representative for Graduate Student Association at the University of Melbourne (2022)
+
+-   Panelist for Diversity and Inclusion seminar series: Migration Experiences in Australia and at the University of Melbourne 

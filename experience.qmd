@@ -1,0 +1,28 @@
+---
+title: "Experience:"
+subtitle: "my professional journey"
+title-block-banner: true
+---
+
+## Teaching
+
+-   Tutor for MAST10010: Data Analysis at the University of Melbourne (2023)
+
+-   VCE Biology demonstrator at the University of Melbourne (2022 & 2023)
+
+
+## Research
+
+- Project Trainee equivalent to Internship in Biotechnology at Regional Centre 
+for Biotechnology, India (2016) with  [Dr. Deepti Jain](https://www.rcb.res.in/index.php?param=empdetails/147)
+
+- Project Trainee equivalent to Internship in Biotechnology at Microbial Diversity
+Research Centre, India (2014 - 2015) with [Dr. Neelu Nawani](https://biotech.dpu.edu.in/directors-message.aspx)
+
+## Employment
+
+- Senior Research Fellow in Bioinformatics at [International Centre for Genetic
+Engineering and Biotechnology](https://www.icgeb.org/) (2019)
+
+- Junior Research Fellow in Bioinformatics at [National Institute of Immunology](https://nii.res.in/) (2018)
+

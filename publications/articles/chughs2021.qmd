@@ -7,15 +7,15 @@ publication: "Nature Genetics"
 doi: "https://www.nature.com/articles/s41588-024-01702-0"
 toc: false
 categories:
-  - eQTL
+  - single-cell
   - genomics
   - journal article
 ---
 
 ## Citation (APA7)
 
-Natri, H. M., Azodi, C. B. D., Peter, L., Taylor, C. J., Chugh, S., Kendle, R., ... & Calvi, C. L. (2023). Cell type-specific and disease-associated eQTL in the human lung. bioRxiv.
+Natri, H. M., Del Azodi, C. B., Peter, L., Taylor, C. J., **Chugh, S.**, Kendle, R., ... & Banovich, N. E. (2024). Cell-type-specific and disease-associated expression quantitative trait loci in the human lung. Nature Genetics, 56(4), 595-604.
 
 ## Abstract
 
-Common genetic variants confer substantial risk for chronic lung diseases, including pulmonary fibrosis (PF). Defining the genetic control of gene expression in a cell-type-specific and context-dependent manner is critical for understanding the mechanisms through which genetic variation influences complex traits and disease pathobiology. To this end, we performed single-cell RNA-sequencing of lung tissue from 67 PF and 49 unaffected donors. Employing a pseudo-bulk approach, we mapped expression quantitative trait loci (eQTL) across 38 cell types, observing both shared and cell type-specific regulatory effects. Further, we identified disease-interaction eQTL and demonstrated that this class of associations is more likely to be cell-type specific and linked to cellular dysregulation in PF. Finally, we connected PF risk variants to their regulatory targets in disease-relevant cell types. These results indicate that cellular context determines the impact of genetic variation on gene expression, and implicates context-specific eQTL as key regulators of lung homeostasis and disease.
+Common genetic variants confer substantial risk for chronic lung diseases, including pulmonary fibrosis. Defining the genetic control of gene expression in a cell-type-specific and context-dependent manner is critical for understanding the mechanisms through which genetic variation influences complex traits and disease pathobiology. To this end, we performed single-cell RNA sequencing of lung tissue from 66 individuals with pulmonary fibrosis and 48 unaffected donors. Using a pseudobulk approach, we mapped expression quantitative trait loci (eQTLs) across 38 cell types, observing both shared and cell-type-specific regulatory effects. Furthermore, we identified disease interaction eQTLs and demonstrated that this class of associations is more likely to be cell-type-specific and linked to cellular dysregulation in pulmonary fibrosis. Finally, we connected lung disease risk variants to their regulatory targets in disease-relevant cell types. These results indicate that cellular context determines the impact of genetic variation on gene expression and implicates context-specific eQTLs as key regulators of lung homeostasis and disease.

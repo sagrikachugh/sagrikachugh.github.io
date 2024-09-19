@@ -4,28 +4,28 @@
     "href": "publications.html",
     "title": "Sagrika Chugh",
     "section": "",
-    "text": "Home\n    Publications\n  \n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n         \n          Publication\n        \n         \n          Year\n        \n     \n  \n    \n      \n      \n    \n\n\n  \n    Cell type-specific and disease-associated eQTL in the human lung\n    Heini M Natri, Christina B Del Azodi, Lance Peter, Chase J Taylor, Sagrika Chugh, et al.,\n    Nature Genetics\n    (2021)\n    \n      Details\n    \n    \n      DOI\n    \n  \n  \n    Characterization of the chloroplast genome facilitated the transformation of parachlorella kessleri-I, a potential marine alga for biofuel production\n    Prachi Nawkarkar, Sagrika Chugh, Surbhi Sharma, Mukesh Jain, Sachin Kajla, Shashi Kumar\n    Current genomics\n    (2020)\n    \n      Details\n    \n    \n      DOI\n    \n  \n\n\nNo matching items"
+    "text": "Home\n    Publications\n  \n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n         \n          Publication\n        \n         \n          Year\n        \n     \n  \n    \n      \n      \n    \n\n\n  \n    simPIC: flexible simulation of paired-insertion counts for single-cell ATAC-sequencing data\n    Sagrika Chugh , Davis McCarthy, Heejung Shim\n    Bioconductor\n    (2024)\n    \n      Details\n    \n    \n      DOI\n    \n  \n  \n    Cell type-specific and disease-associated eQTL in the human lung\n    Heini M Natri, Christina B Del Azodi, Lance Peter, Chase J Taylor, Sagrika Chugh, et al.,\n    Nature Genetics\n    (2021)\n    \n      Details\n    \n    \n      DOI\n    \n  \n  \n    Characterization of the chloroplast genome facilitated the transformation of parachlorella kessleri-I, a potential marine alga for biofuel production\n    Prachi Nawkarkar, Sagrika Chugh, Surbhi Sharma, Mukesh Jain, Sachin Kajla, Shashi Kumar\n    Current genomics\n    (2020)\n    \n      Details\n    \n    \n      DOI\n    \n  \n\n\nNo matching items"
   },
   {
     "objectID": "publications/articles/chughs2021.html",
     "href": "publications/articles/chughs2021.html",
     "title": "Cell type-specific and disease-associated eQTL in the human lung",
     "section": "",
-    "text": "Natri, H. M., Azodi, C. B. D., Peter, L., Taylor, C. J., Chugh, S., Kendle, R., … & Calvi, C. L. (2023). Cell type-specific and disease-associated eQTL in the human lung. bioRxiv."
+    "text": "Natri, H. M., Del Azodi, C. B., Peter, L., Taylor, C. J., Chugh, S., Kendle, R., … & Banovich, N. E. (2024). Cell-type-specific and disease-associated expression quantitative trait loci in the human lung. Nature Genetics, 56(4), 595-604."
   },
   {
     "objectID": "publications/articles/chughs2021.html#citation-apa7",
     "href": "publications/articles/chughs2021.html#citation-apa7",
     "title": "Cell type-specific and disease-associated eQTL in the human lung",
     "section": "",
-    "text": "Natri, H. M., Azodi, C. B. D., Peter, L., Taylor, C. J., Chugh, S., Kendle, R., … & Calvi, C. L. (2023). Cell type-specific and disease-associated eQTL in the human lung. bioRxiv."
+    "text": "Natri, H. M., Del Azodi, C. B., Peter, L., Taylor, C. J., Chugh, S., Kendle, R., … & Banovich, N. E. (2024). Cell-type-specific and disease-associated expression quantitative trait loci in the human lung. Nature Genetics, 56(4), 595-604."
   },
   {
     "objectID": "publications/articles/chughs2021.html#abstract",
     "href": "publications/articles/chughs2021.html#abstract",
     "title": "Cell type-specific and disease-associated eQTL in the human lung",
     "section": "Abstract",
-    "text": "Abstract\nCommon genetic variants confer substantial risk for chronic lung diseases, including pulmonary fibrosis (PF). Defining the genetic control of gene expression in a cell-type-specific and context-dependent manner is critical for understanding the mechanisms through which genetic variation influences complex traits and disease pathobiology. To this end, we performed single-cell RNA-sequencing of lung tissue from 67 PF and 49 unaffected donors. Employing a pseudo-bulk approach, we mapped expression quantitative trait loci (eQTL) across 38 cell types, observing both shared and cell type-specific regulatory effects. Further, we identified disease-interaction eQTL and demonstrated that this class of associations is more likely to be cell-type specific and linked to cellular dysregulation in PF. Finally, we connected PF risk variants to their regulatory targets in disease-relevant cell types. These results indicate that cellular context determines the impact of genetic variation on gene expression, and implicates context-specific eQTL as key regulators of lung homeostasis and disease."
+    "text": "Abstract\nCommon genetic variants confer substantial risk for chronic lung diseases, including pulmonary fibrosis. Defining the genetic control of gene expression in a cell-type-specific and context-dependent manner is critical for understanding the mechanisms through which genetic variation influences complex traits and disease pathobiology. To this end, we performed single-cell RNA sequencing of lung tissue from 66 individuals with pulmonary fibrosis and 48 unaffected donors. Using a pseudobulk approach, we mapped expression quantitative trait loci (eQTLs) across 38 cell types, observing both shared and cell-type-specific regulatory effects. Furthermore, we identified disease interaction eQTLs and demonstrated that this class of associations is more likely to be cell-type-specific and linked to cellular dysregulation in pulmonary fibrosis. Finally, we connected lung disease risk variants to their regulatory targets in disease-relevant cell types. These results indicate that cellular context determines the impact of genetic variation on gene expression and implicates context-specific eQTLs as key regulators of lung homeostasis and disease."
   },
   {
     "objectID": "research.html",
@@ -74,7 +74,7 @@
     "href": "outreach.html",
     "title": "Outreach",
     "section": "",
-    "text": "Diversity and inclusion committee for ABACBS\n\n\nStudent representative for Faculty of Science, Graduate Student Association"
+    "text": "ABACBS: Diversity and Inclusion Committee\nI am deeply passionate about fostering diversity and inclusion in computational biology. As a member of the Diversity and Inclusion committee, I am committed to creating a more equitable and welcoming environment for all individuals, regardless of their background. I believe that diverse perspectives are essential for driving innovation and ensuring that the benefits of scientific advancement are accessible to everyone. My role on the committee allows me to actively contribute to initiatives that promote equal opportunities and representation in our field, which is something I am both proud and honored to support.\n\nAMSI BioInfo Summer Workshop - organising committee\nThis workshop provides a hands-on introduction to then current computational analysis approaches (still relevant )for studying single-cell RNA sequencing data. We will discuss the data formats used frequently in single-cell analysis, typical steps in quality control and processing of single-cell data, some of the biological questions these data can be used to answer and data analysis steps to answer them.\nThe materials for the workshop can be found here\nSPEAK your science workshop at St. Vincent’s institute\norganizing fortnightly workshops with the team and providing feedback to students on their scientific writing \nFaculty of Science representative for Graduate Student Association at the University of Melbourne (2022)\nPanelist for Diversity and Inclusion seminar series: Migration Experiences in Australia and at the University of Melbourne"
   },
   {
     "objectID": "index.html#education",
@@ -103,5 +103,68 @@
     "title": "About me:",
     "section": "",
     "text": "I started off in the wet lab, splashing around with pipettes and microscopes but soon realized my true calling involved less splashing and more coding. Now, as a final-year PhD student at the University of Melbourne, I’m knee-deep in single-cell genomics data, crafting cool computational tools to help biologists interpret their data better. Think of me as a data detective with a caffeine habit.\nMy academic path started with a Bachelor’s degree in Biotechnology, where I designed solutions to combat indoor air pollution. This early work honed my skills in experimental design and problem-solving. Following this, I shifted my focus to studying Plasmodium falciparum, the malaria-causing parasite, delving into its complex biology. My interest in data analysis blossomed during this period, leading me to pursue a Master’s degree in Bioinformatics, where I deepened my expertise in computational methods for biological data.\n\n\n\n\n\n\n\n\nObserving cell cultures under a microscope during my wet lab days."
+  },
+  {
+    "objectID": "about.html#awards",
+    "href": "about.html#awards",
+    "title": "About me:",
+    "section": "Awards",
+    "text": "Awards\n\nMelbourne Centre for Data Science Doctoral Academy Fellow (2022 - 2023) Read more here\nGraeme Clark Institute Top-Up Scholarship (2022 - ongoing) Read more here\nMelbourne Research Scholarship (2020 - ongoing)\nSt. Vincent’s Institute of Medical Research Top-Up Scholarship (2020 - ongoing)"
+  },
+  {
+    "objectID": "about.html#awardsscholarships",
+    "href": "about.html#awardsscholarships",
+    "title": "About me:",
+    "section": "Awards/Scholarships",
+    "text": "Awards/Scholarships\n\nProf. Maurice H. Belz Travel Fund for a summer course at the University of Oxford (2023)\nMelbourne Centre for Data Science Doctoral Academy Fellow (2022 - 2023) Read more here\nGraeme Clark Institute Top-Up Scholarship (2022 - ongoing) Read more here\nMelbourne Research Scholarship (2020 - ongoing)\nSt. Vincent’s Institute of Medical Research Top-Up Scholarship (2020 - ongoing)"
+  },
+  {
+    "objectID": "publications/articles/chughs2024.html",
+    "href": "publications/articles/chughs2024.html",
+    "title": "simPIC: flexible simulation of paired-insertion counts for single-cell ATAC-sequencing data",
+    "section": "",
+    "text": "Chugh S, McCarthy D, Shim H (2024). simPIC: simPIC: flexible simulation of paired-insertion counts for single-cell ATAC-sequencing data. R package version 1.0.0, https://github.com/sagrikachugh/simPIC."
+  },
+  {
+    "objectID": "publications/articles/chughs2024.html#citation-apa7",
+    "href": "publications/articles/chughs2024.html#citation-apa7",
+    "title": "simPIC: flexible simulation of paired-insertion counts for single-cell ATAC-sequencing data",
+    "section": "",
+    "text": "Chugh S, McCarthy D, Shim H (2024). simPIC: simPIC: flexible simulation of paired-insertion counts for single-cell ATAC-sequencing data. R package version 1.0.0, https://github.com/sagrikachugh/simPIC."
+  },
+  {
+    "objectID": "publications/articles/chughs2024.html#abstract",
+    "href": "publications/articles/chughs2024.html#abstract",
+    "title": "simPIC: flexible simulation of paired-insertion counts for single-cell ATAC-sequencing data",
+    "section": "Abstract",
+    "text": "Abstract\nsimPIC is a package for simulating single-cell ATAC-seq count data. It provides a user-friendly, well documented interface for data simulation. Functions are provided for parameter estimation, realistic scATAC-seq data simulation, and comparing real and simulated datasets."
+  },
+  {
+    "objectID": "experience.html",
+    "href": "experience.html",
+    "title": "Experience:",
+    "section": "",
+    "text": "Tutor for MAST10010: Data Analysis at the University of Melbourne (2023)\nVCE Biology demonstrator at the University of Melbourne (2022 & 2023)"
+  },
+  {
+    "objectID": "experience.html#teaching",
+    "href": "experience.html#teaching",
+    "title": "Experience:",
+    "section": "",
+    "text": "Tutor for MAST10010: Data Analysis at the University of Melbourne (2023)\nVCE Biology demonstrator at the University of Melbourne (2022 & 2023)"
+  },
+  {
+    "objectID": "experience.html#research",
+    "href": "experience.html#research",
+    "title": "Experience:",
+    "section": "Research",
+    "text": "Research\n\nProject Trainee equivalent to Internship in Biotechnology at Regional Centre for Biotechnology, India (2016) with Dr. Deepti Jain\nProject Trainee equivalent to Internship in Biotechnology at Microbial Diversity Research Centre, India (2014 - 2015) with Dr. Neelu Nawani"
+  },
+  {
+    "objectID": "experience.html#employment",
+    "href": "experience.html#employment",
+    "title": "Experience:",
+    "section": "Employment",
+    "text": "Employment\n\nSenior Research Fellow in Bioinformatics at International Centre for Genetic Engineering and Biotechnology (2019)\nJunior Research Fellow in Bioinformatics at National Institute of Immunology (2018)"
   }
 ]
