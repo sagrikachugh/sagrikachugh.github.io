@@ -1,7 +1,7 @@
 ---
 title: "simPIC: flexible simulation of paired-insertion counts for single-cell ATAC-sequencing data"
 type: "R package"
-author: "Sagrika Chugh , Davis McCarthy, Heejung Shim"
+author: "Sagrika Chugh, Heejung Shim, Davis McCarthy"
 year: "2024"
 publication: "Bioconductor"
 doi: "https://bioconductor.org/packages/release/bioc/html/simPIC.html"
@@ -19,4 +19,3 @@ Chugh S, McCarthy D, Shim H (2024). simPIC: simPIC: flexible simulation of paire
 ## Abstract
 
 simPIC is a package for simulating single-cell ATAC-seq count data. It provides a user-friendly, well documented interface for data simulation. Functions are provided for parameter estimation, realistic scATAC-seq data simulation, and comparing real and simulated datasets.
-

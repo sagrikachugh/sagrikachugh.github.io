@@ -31,10 +31,16 @@ I am **Sagrika** (pronounced as Sah-gree-kah)
 
 Welcome to my corner of computational biology. Join me on this wild ride as I navigate the tangled web of single-cell genomics, armed with nothing but code and a few cups of coffee.
 
-I am a computational biology PhD student in the [Bioinformatics and Cellular Genomics Lab](https://www.svi.edu.au/laboratories/bioinformatics-cellular-genomics/) at [St. Vincent's Institute of Medical Research](https://www.svi.edu.au/) and University of Melbourne, Melbourne, Australia.\
-\
-My research focuses on single-cell genomics data analysis and development of computational tools for a comprehensive understanding of the genetic basis of complex diseases.
+I am a Post Doctoral Research Fellow in the [Stem Cell Regulation Lab](https://www.svi.edu.au/laboratories/stem-cell-regulation/#:~:text=The%20Stem%20Cell%20Regulation%20Laboratory,process%20termed%20'differentiation') and [Bioinformatics and Cellular Genomics Lab](https://www.svi.edu.au/laboratories/bioinformatics-cellular-genomics/) and at [St. Vincent's Institute of Medical Research](https://www.svi.edu.au/) and University of Melbourne, Melbourne, Australia.\
+
+I completed my PhD in the Bioinformatics and Cellular Genomics Lab. My research focused on single-cell genomics data analysis and development of computational tools for a comprehensive understanding of the genetic basis of complex diseases.
 
 Outside of work, I love to travel on a budget and catch up on my beauty sleep.
 
-Dive in and discover my work – it's more exciting than it sounds, I promise!
+Dive in and discover my work – it's more exciting than it sounds, I promise!\
+\
+`<a href="https://info.flagcounter.com/5MLi"`{=html}\
+\
+<img src="https://s01.flagcounter.com/count2/5MLi/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"/>
+
+</a>
