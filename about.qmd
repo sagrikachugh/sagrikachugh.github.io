@@ -6,7 +6,7 @@ title-block-banner: true
 
 ## My journey
 
-I started off in the wet lab, splashing around with pipettes and microscopes but soon realized my true calling involved less splashing and more coding. Now, as a final-year PhD student at the University of Melbourne, I'm knee-deep in single-cell genomics data, crafting cool computational tools to help biologists interpret their data better. Think of me as a data detective with a caffeine habit.
+I started off in the wet lab, splashing around with pipettes and microscopes but soon realized my true calling involved less splashing and more coding. As a PhD student, I delved in single-cell genomics data, crafting cool computational tools to help biologists interpret their data better. Think of me as a data detective with a caffeine habit.
 
 My academic path started with a Bachelor’s degree in Biotechnology, where I designed solutions to combat indoor air pollution. This early work honed my skills in experimental design and problem-solving. Following this, I shifted my focus to studying *Plasmodium falciparum*, the malaria-causing parasite, delving into its complex biology. My interest in data analysis blossomed during this period, leading me to pursue a Master's degree in Bioinformatics, where I deepened my expertise in computational methods for biological data.
 
@@ -23,7 +23,7 @@ Observing cell cultures under a microscope during my wet lab days.
 
 ## Education
 
-### PhD computational biology, 2020 - 2025
+### PhD Bioinformatics, 2020 - 2025
 
 The University of Melbourne & St. Vincent's Institute of Medical Research
 
