@@ -31,7 +31,7 @@ I am **Sagrika** (pronounced as Sah-gree-kah)
 
 Welcome to my corner of computational biology. Join me on this wild ride as I navigate the tangled web of single-cell genomics, armed with nothing but code and a few cups of coffee.
 
-I am a Post-Doctoral Research Fellow in the [Stem Cell Regulation Lab](https://www.svi.edu.au/laboratories/stem-cell-regulation/#:~:text=The%20Stem%20Cell%20Regulation%20Laboratory,process%20termed%20'differentiation') and [Bioinformatics and Cellular Genomics Lab](https://www.svi.edu.au/laboratories/bioinformatics-cellular-genomics/) and at [St. Vincent's Institute of Medical Research](https://www.svi.edu.au/) and University of Melbourne, Melbourne, Australia.
+I am a Post-Doctoral Research Fellow in the [Stem Cell Regulation Lab](https://www.svi.edu.au/laboratories/stem-cell-regulation/#:~:text=The%20Stem%20Cell%20Regulation%20Laboratory,process%20termed%20'differentiation') and [Bioinformatics and Cellular Genomics Lab](https://www.svi.edu.au/laboratories/bioinformatics-cellular-genomics/) at [St. Vincent's Institute of Medical Research](https://www.svi.edu.au/) and University of Melbourne, Australia.
 
 I completed my PhD in the Bioinformatics and Cellular Genomics Lab. My research focused on single-cell genomics data analysis and development of computational tools for a comprehensive understanding of the genetic basis of complex diseases.
 
