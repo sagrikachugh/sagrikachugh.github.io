@@ -256,6 +256,41 @@
       margin-top: 2rem;
     }
 
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 1.15rem;
+    }
+
+    .profile-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .42rem;
+      min-height: 34px;
+      padding: .34rem .62rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: .82rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: border-color .2s ease, color .2s ease, background .2s ease;
+    }
+
+    .profile-links svg {
+      width: 16px;
+      height: 16px;
+      flex: 0 0 auto;
+    }
+
+    .profile-links a:hover,
+    .profile-links a:focus-visible {
+      background: rgba(29, 106, 138, .06);
+      border-color: rgba(29, 106, 138, .28);
+      color: var(--accent);
+    }
+
     .button {
       display: inline-flex;
       align-items: center;
@@ -423,14 +458,80 @@
 
     .card a:hover { text-decoration: underline; }
 
-    .moments-grid {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: .8rem;
+    #work .section-title {
+      max-width: 650px;
+    }
+
+    #work .card-grid {
+      gap: 1rem;
+    }
+
+    #work .card {
+      position: relative;
+      min-height: 0;
+      padding: 1.25rem 1.25rem 1.15rem;
+      background:
+        linear-gradient(135deg, rgba(29, 106, 138, .08), transparent 38%),
+        var(--surface);
+    }
+
+    #work .card h3 {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      font-weight: 400;
+      line-height: 1.12;
+    }
+
+    #work .card-meta {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      padding-top: .9rem;
+      border-top: 1px solid var(--line);
+      margin-top: .9rem;
+    }
+
+    .work-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .45rem;
+      margin-top: .95rem;
+    }
+
+    #work .work-links a {
+      align-items: center;
+      margin-top: 0;
+      padding: .38rem .55rem;
+      background: rgba(29, 106, 138, .08);
+      border: 1px solid rgba(29, 106, 138, .18);
+      border-radius: 999px;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    #work .work-links a:hover {
+      background: rgba(29, 106, 138, .13);
+      text-decoration: none;
+    }
+
+    .moments-marquee {
       margin-top: 1.45rem;
+      overflow: hidden;
+      mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+    }
+
+    .moments-track {
+      display: flex;
+      gap: .8rem;
+      width: max-content;
+      animation: moments-scroll 46s linear infinite;
+    }
+
+    .moments-marquee:hover .moments-track,
+    .moments-marquee:focus-within .moments-track {
+      animation-play-state: paused;
     }
 
     .moment {
+      flex: 0 0 218px;
       overflow: hidden;
       background: var(--surface);
       border: 1px solid var(--line);
@@ -465,6 +566,34 @@
       margin-bottom: .2rem;
       color: var(--text);
       font-size: .82rem;
+    }
+
+    .moment-date {
+      display: block;
+      margin-bottom: .35rem;
+      color: var(--accent);
+      font-size: .67rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    @keyframes moments-scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(calc(-50% - .4rem)); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .moments-track {
+        width: auto;
+        overflow-x: auto;
+        animation: none;
+        scroll-snap-type: x proximity;
+      }
+
+      .moment {
+        scroll-snap-align: start;
+      }
     }
 
     .card-meta {
@@ -686,7 +815,7 @@
       .nav-links a { font-size: .76rem; }
       .hero { padding-top: 8.5rem; }
       .card-grid { grid-template-columns: 1fr; }
-      .moments-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .moment { flex-basis: 210px; }
       .experience-card { grid-template-columns: 1fr; }
       .logo-badge { width: 50px; height: 50px; }
       .publication-list li,
@@ -699,10 +828,11 @@
     @media (max-width: 460px) {
       .container { width: min(100% - 1.4rem, 980px); }
       .metric-strip,
-      .moments-grid { grid-template-columns: 1fr; }
+      .moment { flex-basis: 78vw; }
       .button { width: 100%; }
       .link-row { gap: .6rem; }
       .tag, .tool { white-space: normal; }
+      #work .card-meta { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -731,6 +861,21 @@
           <p class="hero-copy">
             Currently, I work across biomedical research and data-intensive analytical projects at the <strong>University of Melbourne</strong> and <strong>St Vincent's Institute of Medical Research</strong>, applying quantitative methods, reproducible workflows and stakeholder-focused reporting to real-world challenges.
           </p>
+
+          <div class="profile-links" aria-label="Professional profiles">
+            <a href="https://www.linkedin.com/in/sagrika-chugh-8973578b/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1-.02 5 2.5 2.5 0 0 1 .02-5ZM3 9.5h4v11H3v-11Zm6.25 0h3.8v1.5h.05c.53-.95 1.82-1.95 3.75-1.95 4 0 4.75 2.63 4.75 6.05v5.4h-4v-4.8c0-1.15-.02-2.62-1.6-2.62-1.6 0-1.85 1.25-1.85 2.53v4.89h-4v-11Z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://scholar.google.com/citations?user=uNv547cAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3 1.8 8.4 12 13.8l8.4-4.45V16h1.8V8.4L12 3Zm-5.6 9.1v3.55c0 2 2.55 3.85 5.6 3.85s5.6-1.85 5.6-3.85V12.1L12 15.05 6.4 12.1Z"/></svg>
+              Google Scholar
+            </a>
+            <a href="https://github.com/sagrikachugh" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.25c-5.4 0-9.75 4.38-9.75 9.78 0 4.32 2.8 7.98 6.68 9.27.48.08.66-.2.66-.46v-1.7c-2.72.6-3.3-1.16-3.3-1.16-.44-1.13-1.08-1.43-1.08-1.43-.9-.6.06-.6.06-.6.98.08 1.5 1.02 1.5 1.02.88 1.5 2.3 1.06 2.86.82.08-.64.34-1.06.62-1.3-2.16-.24-4.44-1.08-4.44-4.82 0-1.06.38-1.94 1-2.62-.1-.24-.44-1.24.1-2.58 0 0 .84-.26 2.68 1 .78-.22 1.6-.32 2.42-.32.82 0 1.64.1 2.42.32 1.84-1.26 2.66-1 2.66-1 .54 1.34.2 2.34.1 2.58.64.68 1 1.56 1 2.62 0 3.75-2.28 4.58-4.46 4.82.36.3.68.9.68 1.82v2.7c0 .26.18.55.68.46a9.78 9.78 0 0 0 6.66-9.27c0-5.4-4.36-9.78-9.75-9.78Z"/></svg>
+              GitHub
+            </a>
+          </div>
 
           <div class="tag-row" aria-label="Key capabilities">
             <span class="tag">Data Analysis</span>
@@ -843,7 +988,7 @@
             <div>
               <div class="experience-top">
                 <h3 class="experience-title">Postdoctoral Research Fellow, Bioinformatics</h3>
-                <span class="experience-dates">Apr 2025 - present</span>
+                <span class="experience-dates">April 2025 - present</span>
               </div>
               <p class="experience-org">St Vincent's Institute of Medical Research & University of Melbourne</p>
               <ul>
@@ -861,7 +1006,7 @@
             <div>
               <div class="experience-top">
                 <h3 class="experience-title">PhD Researcher, Bioinformatics</h3>
-                <span class="experience-dates">Dec 2020 - Aug 2025</span>
+                <span class="experience-dates">Dec 2020 - March 2025</span>
               </div>
               <p class="experience-org">University of Melbourne</p>
               <ul>
@@ -912,27 +1057,49 @@
       <div class="container">
         <span class="section-kicker">Research moments</span>
         <h2 class="section-title">A few moments from research, communication and training.</h2>
-        <div class="moments-grid">
-          <figure class="moment">
-            <img class="focus-left" src="images/grad_ceremony_2025.jpg" alt="Sagrika Chugh at her PhD graduation ceremony">
-            <figcaption><strong>PhD graduation</strong> Completion of doctoral training at the University of Melbourne.</figcaption>
-          </figure>
-          <figure class="moment">
-            <img class="focus-speaker" src="images/giving_talk_to_stakeholders.jpg" alt="Sagrika Chugh presenting research to stakeholders">
-            <figcaption><strong>Stakeholder talk</strong> Communicating research to supporters and non-specialist audiences.</figcaption>
-          </figure>
-          <figure class="moment">
-            <img src="images/thesis_defence.jpg" alt="Sagrika Chugh with supervisors after final thesis seminar">
-            <figcaption><strong>Final thesis seminar</strong> Presenting doctoral research and analytical outputs.</figcaption>
-          </figure>
-          <figure class="moment">
-            <img class="focus-award" src="images/ABACBS_Amplify_Award.JPG" alt="Sagrika Chugh receiving an ABACBS Amplify award">
-            <figcaption><strong>ABACBS Amplify award</strong> Recognition for contribution and engagement in the computational biology community.</figcaption>
-          </figure>
-          <figure class="moment">
-            <img class="show-full focus-oxford" src="images/IMG_6699.jpg" alt="Sagrika Chugh at the Statistical Genomics Summer School at Oxford">
-            <figcaption><strong>Oxford summer course</strong> Advanced training through the Statistical Genomics Summer School at Oxford.</figcaption>
-          </figure>
+        <div class="moments-marquee" aria-label="Research moments carousel">
+          <div class="moments-track">
+            <figure class="moment">
+              <img class="focus-left" src="images/grad_ceremony_2025.jpg" alt="Sagrika Chugh at her PhD graduation ceremony">
+              <figcaption><span class="moment-date">Dec 2025</span><strong>Thesis award</strong> Recognition of doctoral research and thesis completion.</figcaption>
+            </figure>
+            <figure class="moment">
+              <img class="focus-speaker" src="images/giving_talk_to_stakeholders.jpg" alt="Sagrika Chugh presenting research to stakeholders">
+              <figcaption><span class="moment-date">July 2024</span><strong>Stakeholder talk</strong> Communicating research to supporters and non-specialist audiences.</figcaption>
+            </figure>
+            <figure class="moment">
+              <img src="images/thesis_defence.jpg" alt="Sagrika Chugh with supervisors after final thesis seminar">
+              <figcaption><span class="moment-date">Nov 2024</span><strong>Final thesis seminar</strong> Presenting doctoral research and analytical outputs.</figcaption>
+            </figure>
+            <figure class="moment">
+              <img class="focus-award" src="images/ABACBS_Amplify_Award.JPG" alt="Sagrika Chugh receiving an ABACBS Amplify award">
+              <figcaption><span class="moment-date">Nov 2025</span><strong>ABACBS Amplify award</strong> Recognition for contribution and engagement in the computational biology community.</figcaption>
+            </figure>
+            <figure class="moment">
+              <img class="show-full focus-oxford" src="images/IMG_6699.jpg" alt="Sagrika Chugh at the Statistical Genomics Summer School at Oxford">
+              <figcaption><span class="moment-date">June 2023</span><strong>Oxford summer course</strong> Advanced training through the Statistical Genomics Summer School at Oxford.</figcaption>
+            </figure>
+            <figure class="moment" aria-hidden="true">
+              <img class="focus-left" src="images/grad_ceremony_2025.jpg" alt="">
+              <figcaption><span class="moment-date">Dec 2025</span><strong>Thesis award</strong> Recognition of doctoral research and thesis completion.</figcaption>
+            </figure>
+            <figure class="moment" aria-hidden="true">
+              <img class="focus-speaker" src="images/giving_talk_to_stakeholders.jpg" alt="">
+              <figcaption><span class="moment-date">July 2024</span><strong>Stakeholder talk</strong> Communicating research to supporters and non-specialist audiences.</figcaption>
+            </figure>
+            <figure class="moment" aria-hidden="true">
+              <img src="images/thesis_defence.jpg" alt="">
+              <figcaption><span class="moment-date">Nov 2024</span><strong>Final thesis seminar</strong> Presenting doctoral research and analytical outputs.</figcaption>
+            </figure>
+            <figure class="moment" aria-hidden="true">
+              <img class="focus-award" src="images/ABACBS_Amplify_Award.JPG" alt="">
+              <figcaption><span class="moment-date">Nov 2025</span><strong>ABACBS Amplify award</strong> Recognition for contribution and engagement in the computational biology community.</figcaption>
+            </figure>
+            <figure class="moment" aria-hidden="true">
+              <img class="show-full focus-oxford" src="images/IMG_6699.jpg" alt="">
+              <figcaption><span class="moment-date">June 2023</span><strong>Oxford summer course</strong> Advanced training through the Statistical Genomics Summer School at Oxford.</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
@@ -940,8 +1107,8 @@
     <section id="work">
       <div class="container">
         <span class="section-kicker">Selected work</span>
-        <h2 class="section-title">Selected research, software and dashboard work.</h2>
-        <p class="section-intro">Some examples are privacy-safe recreations of the kind of work I do, using synthetic data or public information rather than unpublished research.</p>
+        <h2 class="section-title">Projects that connect analysis, tools and evidence.</h2>
+        <p class="section-intro">A compact selection of public work and privacy-safe examples that show how I build reproducible analysis, usable tools and clear research communication.</p>
         <div class="card-grid">
           <article class="card">
             <p class="card-label">Open-source software</p>
@@ -951,7 +1118,10 @@
               <p><strong>Impact</strong><br>6,000+ downloads; supports method benchmarking.</p>
               <p><strong>Tools</strong><br>R · Bioconductor · simulation</p>
             </div>
-            <a href="https://github.com/sagrikachugh/simPIC" target="_blank" rel="noopener">View GitHub</a>
+            <div class="work-links">
+              <a href="https://github.com/sagrikachugh/simPIC" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://sagrikachugh.github.io/simPIC-paper/" target="_blank" rel="noopener">Paper repo</a>
+            </div>
           </article>
 
           <article class="card">
@@ -962,7 +1132,9 @@
               <p><strong>Impact</strong><br>Strengthened evidence for cell-type-specific disease mechanism research.</p>
               <p><strong>Tools</strong><br>R · statistical modelling · reproducible analysis</p>
             </div>
-            <a href="https://www.nature.com/articles/s41588-024-01702-0" target="_blank" rel="noopener">View paper</a>
+            <div class="work-links">
+              <a href="https://www.nature.com/articles/s41588-024-01702-0" target="_blank" rel="noopener">View paper</a>
+            </div>
           </article>
 
           <article class="card">
@@ -973,7 +1145,9 @@
               <p><strong>Output</strong><br>Shows the app structure and collaborator workflow, not real data or findings.</p>
               <p><strong>Tools</strong><br>R Shiny · ShinyCell2-style workflow · mock data</p>
             </div>
-            <a href="niche-explorer.html">Open demo</a>
+            <div class="work-links">
+              <a href="niche-explorer.html">Open demo</a>
+            </div>
           </article>
 
           <article class="card">
