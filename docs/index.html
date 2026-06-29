@@ -565,27 +565,72 @@
     .experience-card li + li { margin-top: .25rem; }
 
     footer {
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 2.25rem;
       color: var(--muted);
-      text-align: center;
       font-size: .78rem;
     }
 
-    .visitor-counter {
-      display: inline-grid;
-      justify-items: center;
-      gap: .35rem;
-      margin-top: .85rem;
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: .85rem;
+      width: min(100% - 2rem, 980px);
+      margin: 0 auto;
+      text-align: center;
     }
 
-    .visitor-counter a {
+    .footer-inner p {
+      margin: 0;
+    }
+
+    .footer-inner a {
       color: var(--muted);
       text-decoration: none;
     }
 
+    .footer-inner a:hover {
+      color: var(--accent);
+    }
+
+    .visitor-counter {
+      position: relative;
+      display: inline-grid;
+      justify-items: center;
+    }
+
+    .visitor-counter .counter-label {
+      color: var(--muted);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
     .visitor-counter img {
-      opacity: .78;
+      position: absolute;
+      bottom: 1.75rem;
+      left: 50%;
+      display: block;
+      width: 220px;
+      max-width: 80vw;
+      padding: .55rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      box-shadow: 0 12px 30px rgba(28, 28, 28, .12);
       filter: saturate(.85);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(-50%) translateY(4px);
+      transition: opacity .18s ease, transform .18s ease;
+    }
+
+    .visitor-counter:hover img,
+    .visitor-counter:focus-within img {
+      opacity: .9;
+      transform: translateX(-50%) translateY(0);
     }
 
     @media (max-width: 840px) {
@@ -606,6 +651,14 @@
 
       .current-card {
         width: min(100%, 320px);
+      }
+
+      .footer-inner {
+        align-items: center;
+      }
+
+      .visitor-counter {
+        justify-items: center;
       }
 
       .metric-strip {
@@ -939,12 +992,14 @@
   </main>
 
   <footer>
-    <p>Sagrika Chugh · Melbourne, Australia · <a href="mailto:sagrika.chugh@gmail.com">sagrika.chugh@gmail.com</a></p>
-    <div class="visitor-counter">
-      <a href="https://info.flagcounter.com/5MLi" target="_blank" rel="noopener">Visitors from around the world</a>
-      <a href="https://info.flagcounter.com/5MLi" target="_blank" rel="noopener">
-        <img src="https://s01.flagcounter.com/count2/5MLi/bg_FFFFFF/txt_66615B/border_DED9CE/columns_2/maxflags_10/viewers_0/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter showing visitor countries">
-      </a>
+    <div class="footer-inner">
+      <p>Sagrika Chugh · Melbourne, Australia · <a href="mailto:sagrika.chugh@gmail.com">sagrika.chugh@gmail.com</a></p>
+      <div class="visitor-counter" aria-label="Visitor country counter">
+        <a class="counter-label" href="https://info.flagcounter.com/5MLi" target="_blank" rel="noopener">Global visitors</a>
+        <a href="https://info.flagcounter.com/5MLi" target="_blank" rel="noopener">
+          <img src="https://s01.flagcounter.com/count2/5MLi/bg_FFFFFF/txt_66615B/border_DED9CE/columns_5/maxflags_10/viewers_0/labels_0/pageviews_0/flags_1/percent_0/" alt="Flag Counter showing visitor countries">
+        </a>
+      </div>
     </div>
   </footer>
 </body>
