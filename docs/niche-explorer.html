@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mock Niche Explorer | Sagrika Chugh</title>
+<meta name="description" content="Privacy-safe mock ShinyCell2-style interface showing UMAP-style exploration, feature selection and metadata controls with invented data only.">
+<link rel="icon" href="images/favicon.jpeg">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+<nav class="site-nav" aria-label="Primary"><a class="brand" href="index.html"><img src="images/favicon.jpeg" alt="">Sagrika Chugh</a><div class="nav-links"><a href="index.html#work">Selected Work</a><a href="mailto:sagrika.chugh@gmail.com">Contact</a></div></nav>
+<main>
+<header class="page-header"><h1>Mock Niche Explorer</h1><p>Privacy-safe ShinyCell2-style interface example using invented data only</p></header>
+<section class="content home-content">
+
+<p><strong>Mock interface only.</strong> This page does not use real data, real gene names, real cell labels, unpublished results or biological interpretation. It recreates the broad interaction pattern of a ShinyCell2-style app: selecting metadata or a feature, viewing UMAP-style coordinates, adjusting plot options, subsetting records and exporting collaborator-friendly views.</p>
+<div class="notice-panel">
+  <strong>What this demonstrates:</strong> interface design, reproducible app structure and collaborator-facing data exploration. <strong>What it does not show:</strong> real research data, findings, labels or conclusions.
+</div>
+<div class="demo-grid">
+  <aside class="demo-panel">
+    <h3>Controls</h3>
+    <label for="view">View</label><select id="view"><option value="side">Side-by-side UMAP</option><option value="zoom">Zoom-enabled UMAP</option></select>
+    <label for="colourBy">Colour by</label><select id="colourBy"><option value="cluster">Mock cluster</option><option value="sample">Mock sample</option><option value="feature">Synthetic feature expression</option></select>
+    <label for="feature">Feature name</label><select id="feature"><option value="SyntheticFeature_01">SyntheticFeature_01</option><option value="SyntheticFeature_02">SyntheticFeature_02</option><option value="SyntheticFeature_03">SyntheticFeature_03</option></select>
+    <label for="subset">Subset records</label><select id="subset"><option value="All">All mock records</option><option value="Group A">Group A</option><option value="Group B">Group B</option><option value="Group C">Group C</option></select>
+    <label for="pointSize">Point size</label><input id="pointSize" type="range" min="2" max="7" value="4">
+    <label><input id="labels" type="checkbox" checked> Show mock labels</label>
+    <div class="control-summary">
+      <span>Mock records: <strong id="visibleRecords">96</strong></span>
+      <span>Export-ready views</span>
+    </div>
+    <p class="meta">The labels are intentionally generic so the page demonstrates workflow design without implying a real dataset or result.</p>
+  </aside>
+  <section class="demo-main">
+    <div class="mock-toolbar">
+      <span id="viewLabel">Side-by-side UMAP</span>
+      <button type="button" id="downloadPlot">Download plot</button>
+      <button type="button" id="downloadLegend">Download legend</button>
+    </div>
+    <div class="plot-grid">
+      <div class="plot-panel">
+        <h3>Cell information UMAP</h3>
+        <svg id="metaPlot" viewBox="0 0 420 320" role="img" aria-label="Mock UMAP-style plot coloured by synthetic metadata"></svg>
+        <div class="legend-row" id="metaLegend"></div>
+      </div>
+      <div class="plot-panel">
+        <h3>Feature expression UMAP</h3>
+        <svg id="featurePlot" viewBox="0 0 420 320" role="img" aria-label="Mock UMAP-style plot coloured by synthetic feature expression"></svg>
+        <div class="legend-row"><span><i class="gradient-swatch"></i>Low to high synthetic feature value</span></div>
+      </div>
+    </div>
+    <h3>Mock record counts</h3>
+    <div id="table"></div>
+  </section>
+</div>
+<script>
+const palette = {A:'#0f766e',B:'#2563eb',C:'#a855f7'};
+const samplePalette = {'Group A':'#0f766e','Group B':'#c2410c','Group C':'#4f46e5'};
+function jitter(seed){
+  const x = Math.sin(seed * 12.9898) * 43758.5453;
+  return x - Math.floor(x);
+}
+const data = Array.from({length:96},(_,i)=>{
+  const group = ['Group A','Group B','Group C'][i%3];
+  const cluster = ['A','B','C'][i%3];
+  const local = Math.floor(i / 3);
+  const shape = {
+    A: [[84,96],[110,76],[142,104],[122,138],[165,152],[95,166],[190,116],[150,72]],
+    B: [[250,76],[284,92],[315,124],[282,152],[338,166],[235,134],[300,196],[360,112]],
+    C: [[170,220],[205,196],[236,224],[270,246],[212,260],[145,250],[252,184],[310,230]]
+  }[cluster];
+  const anchor = shape[local % shape.length];
+  const x = anchor[0] + (jitter(i + 1) - .5) * 28 + Math.sin(local * .9) * 9;
+  const y = anchor[1] + (jitter(i + 11) - .5) * 24 + Math.cos(local * .7) * 8;
+  return {
+    id: 'Mock_' + String(i+1).padStart(3,'0'),
+    group,
+    cluster: 'Cluster ' + cluster,
+    x,
+    y,
+    expr1: (i * 17) % 100,
+    expr2: (i * 29 + 15) % 100,
+    expr3: (i * 41 + 7) % 100
+  };
+});
+function valueFor(d){
+  const f = document.getElementById('feature').value;
+  return f.endsWith('02') ? d.expr2 : f.endsWith('03') ? d.expr3 : d.expr1;
+}
+function filtered(){
+  const subset = document.getElementById('subset').value;
+  return data.filter(d => subset === 'All' || d.group === subset);
+}
+function expressionColour(v){
+  const light = 92 - Math.round(v * 0.42);
+  return 'hsl(176 58% '+light+'%)';
+}
+function drawPlot(id, mode){
+  const rows = filtered();
+  const size = document.getElementById('pointSize').value;
+  const showLabels = document.getElementById('labels').checked;
+  const colourBy = document.getElementById('colourBy').value;
+  const svg = document.getElementById(id);
+  const points = rows.map(d => {
+    const fill = mode === 'feature' || colourBy === 'feature' ? expressionColour(valueFor(d)) : colourBy === 'sample' ? samplePalette[d.group] : palette[d.cluster.replace('Cluster ','')];
+    return '<circle cx="'+d.x.toFixed(1)+'" cy="'+d.y.toFixed(1)+'" r="'+size+'" fill="'+fill+'" opacity=".84" stroke="#fff" stroke-width=".6"><title>'+d.id+' - mock record only</title></circle>';
+  }).join('');
+  const labels = showLabels ? ['A','B','C'].map((l,i)=>'<text x="'+[76,286,180][i]+'" y="'+[58,62,286][i]+'">Cluster '+l+'</text>').join('') : '';
+  svg.innerHTML = '<defs><pattern id="grid-'+id+'" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M 28 0 L 0 0 0 28" fill="none" stroke="#eef2f7" stroke-width="1"/></pattern></defs><rect x="1" y="1" width="418" height="318" rx="12" fill="#fff" stroke="#d9e2ec"/><rect x="45" y="35" width="340" height="250" fill="url(#grid-'+id+')"/><line x1="45" y1="285" x2="385" y2="285" stroke="#cbd5e1"/><line x1="45" y1="285" x2="45" y2="35" stroke="#cbd5e1"/><text x="190" y="308">UMAP 1</text><text x="10" y="172" transform="rotate(-90 10 172)">UMAP 2</text>'+points+labels;
+}
+function downloadText(filename, text, type){
+  const blob = new Blob([text], {type});
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = filename;
+  link.click();
+  URL.revokeObjectURL(url);
+}
+function downloadPlot(){
+  const svg = document.getElementById('featurePlot').outerHTML;
+  downloadText('mock-niche-explorer-umap.svg', svg, 'image/svg+xml');
+}
+function downloadLegend(){
+  const colourBy = document.getElementById('colourBy').value;
+  const text = [
+    'Mock Niche Explorer legend',
+    'Colour by: ' + colourBy,
+    'Feature: ' + document.getElementById('feature').value,
+    'Note: mock interface only; no real data or findings.'
+  ].join('\n');
+  downloadText('mock-niche-explorer-legend.txt', text, 'text/plain');
+}
+function render(){
+  document.getElementById('viewLabel').textContent = document.getElementById('view').value === 'zoom' ? 'Zoom-enabled UMAP' : 'Side-by-side UMAP';
+  drawPlot('metaPlot','meta');
+  drawPlot('featurePlot','feature');
+  const counts = filtered().reduce((acc,d)=>{acc[d.cluster]=(acc[d.cluster]||0)+1;return acc;},{});
+  const rows = filtered();
+  document.getElementById('visibleRecords').textContent = rows.length;
+  const colourBy = document.getElementById('colourBy').value;
+  const legend = colourBy === 'sample' ? Object.entries(samplePalette).map(([k,v])=>[k,v]) : colourBy === 'feature' ? [['Synthetic feature','linear-gradient(90deg,hsl(176 58% 92%),hsl(176 58% 50%))']] : Object.entries(palette).map(([k,v])=>['Cluster '+k,v]);
+  document.getElementById('metaLegend').innerHTML = legend.map(([label,colour])=>'<span><i style="background:'+colour+'"></i>'+label+'</span>').join('');
+  document.getElementById('table').innerHTML = '<table><thead><tr><th>Mock grouping</th><th>Visible records</th><th>Purpose</th></tr></thead><tbody>' + Object.entries(counts).map(([k,v])=>'<tr><td>'+k+'</td><td>'+v+'</td><td>Interface demonstration only</td></tr>').join('') + '</tbody></table>';
+}
+['view','colourBy','feature','subset','pointSize','labels'].forEach(id=>document.getElementById(id).addEventListener('input',render));
+document.getElementById('downloadPlot').addEventListener('click',downloadPlot);
+document.getElementById('downloadLegend').addEventListener('click',downloadLegend);
+render();
+</script>
+</section>
+</main>
+<footer>Copyright 2026, Sagrika Chugh</footer>
+</body>
+</html>
