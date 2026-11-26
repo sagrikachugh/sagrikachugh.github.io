@@ -515,6 +515,7 @@
     .moments-marquee {
       margin-top: 1.45rem;
       overflow: hidden;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
       mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
     }
 
@@ -522,12 +523,21 @@
       display: flex;
       gap: .8rem;
       width: max-content;
+      will-change: transform;
+    }
+
+    .moments-track.is-ready {
       animation: moments-scroll 46s linear infinite;
     }
 
-    .moments-marquee:hover .moments-track,
     .moments-marquee:focus-within .moments-track {
       animation-play-state: paused;
+    }
+
+    @media (hover: hover) {
+      .moments-marquee:hover .moments-track {
+        animation-play-state: paused;
+      }
     }
 
     .moment {
@@ -579,8 +589,8 @@
     }
 
     @keyframes moments-scroll {
-      from { transform: translateX(0); }
-      to { transform: translateX(calc(-50% - .4rem)); }
+      from { transform: translate3d(0, 0, 0); }
+      to { transform: translate3d(var(--moments-distance), 0, 0); }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1219,5 +1229,29 @@
       </div>
     </div>
   </footer>
+  <script>
+    (() => {
+      const track = document.querySelector('.moments-track');
+      if (!track) return;
+
+      const cards = track.children;
+      const firstDuplicate = cards[Math.floor(cards.length / 2)];
+      if (!firstDuplicate) return;
+
+      const startCarousel = () => {
+        const distance = firstDuplicate.offsetLeft - cards[0].offsetLeft;
+        if (distance <= 0) return;
+
+        track.style.setProperty('--moments-distance', `${-distance}px`);
+        track.classList.add('is-ready');
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', startCarousel, { once: true });
+      } else {
+        startCarousel();
+      }
+    })();
+  </script>
 </body>
 </html>
